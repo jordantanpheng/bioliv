@@ -33,8 +33,8 @@
                             </div>
                             <div class="product-body">
                                 <span class="product-price text-center">
-                                   <del class="del">${{ (product.price*1.1).toFixed(2) }}</del>
-                                   <span class="new-price">${{ product.price }}</span>
+                                   <del class="del">{{ (product.price*1.1).toFixed(2) }}€</del>
+                                   <span class="new-price">{{ product.price }}€</span>
                                 </span>
                                 <p>Description : {{ product.description }}</p>
 
@@ -46,19 +46,9 @@
                                     <div>
                                         <button (click)="addCart(product)" class="btn theme-btn--dark1 btn--xl mt-5 mt-sm-0 rounded-5" data-dismiss="modal">
                                   <span class="mr-2"><i class="ion-android-add" ></i></span>
-                                  Add to cart
+                                  Ajouter au panier
                               </button>
                                     </div>
-                                </div>
-
-                                <div class="pro-social-links mt-10">
-                                    <ul class="d-flex align-items-center">
-                                        <li class="share">Share</li>
-                                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                        <li><a href="#"><i class="ion-social-google"></i></a></li>
-                                        <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>

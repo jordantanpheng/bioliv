@@ -5,13 +5,13 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-center mb-15">
-                        <h2 class="title text-dark text-capitalize">cart</h2>
+                        <h2 class="title text-dark text-capitalize">Panier</h2>
                     </div>
                 </div>
                 <div class="col-12">
                     <ol class="breadcrumb bg-transparent m-0 p-0 align-items-center justify-content-center">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">cart</li>
+                        <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Panier</li>
                     </ol>
                 </div>
             </div>
@@ -23,16 +23,16 @@
         <div class="container" *ngIf="cart.length">
             <div class="row">
                 <div class="col-12">
-                    <h3 class="title mb-30 pb-25 text-capitalize">Your cart items</h3>
+                    <h3 class="title mb-30 pb-25 text-capitalize">Vos articles</h3>
                     <div class="table-responsive">
                         <table class="table">
                             <thead class="thead-light">
                                 <tr>
-                                    <th class="text-center" scope="col">Product Image</th>
-                                    <th class="text-center" scope="col">Product Name</th>
-                                    <th class="text-center" scope="col">Stock Status</th>
-                                    <th class="text-center" scope="col">Qty</th>
-                                    <th class="text-center" scope="col">Price</th>
+                                    <th class="text-center" scope="col">Image du produit</th>
+                                    <th class="text-center" scope="col">Nom du produit</th>
+                                    <th class="text-center" scope="col">Stock</th>
+                                    <th class="text-center" scope="col">Quantité</th>
+                                    <th class="text-center" scope="col">Prix</th>
                                     <th class="text-center" scope="col">action</th>
 
                                 </tr>
@@ -46,7 +46,7 @@
                                         <span class="whish-title">{{ data.product.name }}</span>
                                     </td>
                                     <td class="text-center">
-                                        <span class="badge badge-success position-static">In Stock</span>
+                                        <span class="badge badge-success position-static">En stock</span>
                                     </td>
                                     <td class="text-center">
                                         <div class="product-count style">
@@ -63,7 +63,7 @@
                                     </td>
                                     <td class="text-center">
                                         <span class="whish-list-price">
-                                    ${{ (data.product.price*data.number).toFixed(2)}}
+                                    {{ (data.product.price*data.number).toFixed(2)}}€
                                 </span></td>
 
                                     <td class="text-center">
@@ -77,13 +77,13 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <a routerLink="/checkout" class="btn btn-block theme-btn--dark1 btn--lg mt-70">buy now</a>
+                    <a routerLink="/checkout" class="btn btn-block theme-btn--dark1 btn--lg mt-70">Acheter maintenant</a>
                 </div>
             </div>
         </div>
         <div class="container" *ngIf="!cart.length">
-            <h3 class="title mb-30 pb-25 text-capitalize">Your cart is empty</h3>
-            <a routerLink="/shop" class="btn btn-block theme-btn--dark1 btn--lg mt-70">Go back to shop</a>
+            <h3 class="title mb-30 pb-25 text-capitalize">Votre panier est vide</h3>
+            <a routerLink="/shop" class="btn btn-block theme-btn--dark1 btn--lg mt-70">Continuer vos achats</a>
         </div>
     </section>
 </section>

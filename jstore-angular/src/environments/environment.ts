@@ -4,11 +4,11 @@
 
 export const environment = {
   production: false,
-  API: 'https://api-ecommerce.espero-soft.com/api/',
-  //API: 'http://localhost/ecommerce/backend/api/',
+  //API: 'https://api-ecommerce.espero-soft.com/api/',
+  API: 'http://localhost/ecommerce/backend/api/',
   API_KEY: 'API_KEY=adsffsdfds6b-6727-46f4-8bee-2c6ce6293e41',
-  prefUrlImage: 'https://api-ecommerce.espero-soft.com/images/products/',
-  //prefUrlImage: 'http://localhost/ecommerce/backend/images/products/',
+  //prefUrlImage: 'https://api-ecommerce.espero-soft.com/images/products/',
+  prefUrlImage: 'http://localhost/ecommerce/backend/images/products/',
   ID_CLIENT_PAYPAL: 'AaMJbn8uaYJ1PuV6_53UnrZ52nChVn_1A1fcAqEX57LL1w0Z-cdo4VUqbQwwU-WEzzMkoTerVHHS0II4',
   CURRENCY: 'EUR'
 

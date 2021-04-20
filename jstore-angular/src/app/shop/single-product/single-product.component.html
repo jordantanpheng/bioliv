@@ -33,9 +33,9 @@
                     </div>
                     <div class="product-body mb-40">
                         <div class="d-flex align-items-center mb-30">
-                            <h6 class="product-price mr-20"><del class="del">${{ (product.price*1.1).toFixed(2) }}</del>
-                                <span class="onsale">${{ product.price }}</span></h6>
-                            <span class="badge position-static bg-dark rounded-0">Save 10%</span>
+                            <h6 class="product-price mr-20"><del class="del">{{ (product.price*1.1).toFixed(2) }}€</del>
+                                <span class="onsale">{{ product.price }}€</span></h6>
+                            <span class="badge position-static bg-dark rounded-0">Economisez 10% !</span>
                         </div>
                         <p>Description : {{ product.description}}</p>
 
@@ -46,20 +46,9 @@
                             <div>
                                 <button (click)="addCart(product)" class="btn theme-btn--dark3 btn--xl mt-5 mt-sm-0 rounded-5" data-toggle="modal" [attr.data-target]="'#add-to-cart-'+product.idProduct">
                                 <span class="mr-2"><i class="ion-android-add"></i></span>
-                                Add to cart
+                                Ajouter au panier
                               </button>
                             </div>
-
-                        </div>
-
-                        <div class="pro-social-links mt-10">
-                            <ul class="d-flex align-items-center">
-                                <li class="share">Share</li>
-                                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                <li><a href="#"><i class="ion-social-google"></i></a></li>
-                                <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -76,10 +65,10 @@
                                         <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Description</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Product Details</a>
+                                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Détails du produit</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Reviews</a>
+                                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Avis</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -95,49 +84,7 @@
                                 <div class="single-product-desc">
                                     <ul>
                                         <li>
-                                            Block out the haters with the fresh adidas® Originals Kaval Windbreaker Jacket.
-                                        </li>
-                                        <li>
-                                            Part of the Kaval Collection.
-                                        </li>
-                                        <li>
-                                            Regular fit is eased, but not sloppy, and perfect for any activity.
-                                        </li>
-                                        <li>
-                                            Plain-woven jacket specifically constructed for freedom of movement.
-                                        </li>
-                                        <li>
-                                            Soft fleece lining delivers lightweight warmth.
-                                        </li>
-                                        <li>
-                                            Attached drawstring hood.
-                                        </li>
-                                        <li>
-                                            Full-length zip closure.
-                                        </li>
-                                        <li>
-                                            Long sleeves with stretch cuffs.
-                                        </li>
-                                        <li>
-                                            Side hand pockets.
-                                        </li>
-                                        <li>
-                                            Brand graphics at left chest and back.
-                                        </li>
-                                        <li>
-                                            Straight hem.
-                                        </li>
-                                        <li>
-                                            Shell: 100% nylon;<br>Lining: 100% polyester.
-                                        </li>
-                                        <li>
-                                            Machine wash, tumble dry.
-                                        </li>
-                                        <li>
-                                            Imported.
-                                        </li>
-                                        <li>
-                                            <div>Product measurements were taken using size MD. Please note that measurements may vary by size.</div>
+                                            Produit frais et bio !
                                         </li>
                                     </ul>
                                 </div>
@@ -146,23 +93,12 @@
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                                 <div class="single-product-desc">
                                     <div class="studio-thumb">
-                                        <a href="#"><img class="mb-30" src="assets/img/stodio.jpg" alt="studio-thumb"></a>
+                                        <a href="#"><img class="mb-30" src="assets/img/logo/logo-dark.png" alt="studio-thumb"></a>
                                         <h6 class="mb-2">Reference <small>demo_1</small> </h6>
-                                        <h6>In stock <small>300 Items</small> </h6>
-                                        <h3>Data sheet</h3>
+                                        <h6>En stock <small>300</small> </h6>
                                     </div>
                                     <div class="product-features">
                                         <ul>
-                                            <li><span>Compositions</span></li>
-                                            <li><span>Cotton</span></li>
-                                            <li><span>Paper Type</span></li>
-                                            <li><span>Doted</span></li>
-                                            <li><span>Color</span></li>
-                                            <li><span>Black</span></li>
-                                            <li><span>Size</span></li>
-                                            <li><span>L</span></li>
-                                            <li><span>Frame Size</span></li>
-                                            <li><span>40x60cm</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -194,7 +130,7 @@
                                         <p>23/09/2020</p>
                                         <h4 class="title">demo</h4>
                                         <p>ok !</p>
-                                        <a href="#" class="btn theme-btn--dark3 theme-btn--dark3-sm btn--sm rounded-5 mt-15" data-toggle="modal" data-target="#exampleModalCenter">Write your review !</a>
+                                        <a href="#" class="btn theme-btn--dark3 theme-btn--dark3-sm btn--sm rounded-5 mt-15" data-toggle="modal" data-target="#exampleModalCenter">Ecrire un avis</a>
                                     </div>
                                 </div>
                             </div>
