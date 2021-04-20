@@ -12,7 +12,6 @@
                             <img class="float-right" width="650" [src]="prefUrlImage+product.image" alt="product-thumb">
                         </div>
                     </div>
-
                     <!-- single-product end -->
                 </div>
 
@@ -31,6 +30,7 @@
 
                         </div>
                     </div>
+
                     <div class="product-body mb-40">
                         <div class="d-flex align-items-center mb-30">
                             <h6 class="product-price mr-20"><del class="del">{{ (product.price*1.1).toFixed(2) }}€</del>
@@ -38,11 +38,18 @@
                             <span class="badge position-static bg-dark rounded-0">Economisez 10% !</span>
                         </div>
                         <p>Description : {{ product.description}}</p>
-
                     </div>
+
+                    <form class="personal-information" [formGroup]="quantityForm">
+                      <div class="form-group row">
+                          <div class="col-md-6">
+                              <input type="text" formControlName="quantity" name="quantity" class="form-control" id="quantity" placeholder="Quantité en kilo">
+                          </div>
+                      </div>
+                    </form>
+
                     <div class="product-footer">
                         <div class="product-count style d-flex flex-column flex-sm-row mt-30 mb-30">
-
                             <div>
                                 <button (click)="addCart(product)" class="btn theme-btn--dark3 btn--xl mt-5 mt-sm-0 rounded-5" data-toggle="modal" [attr.data-target]="'#add-to-cart-'+product.idProduct">
                                 <span class="mr-2"><i class="ion-android-add"></i></span>
