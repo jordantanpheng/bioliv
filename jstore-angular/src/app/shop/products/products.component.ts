@@ -17,7 +17,7 @@ export class ProductsComponent implements OnInit {
   prefUrlImage = `${environment.prefUrlImage}`;
   prodSub: Subscription;
   currentPage = 0;
-  pages = [0,1,2,3,4,5,6];
+  pages = [0,1,2];
 
   constructor(private prodService: ProductsService,
               private cartService: CartService) { }
