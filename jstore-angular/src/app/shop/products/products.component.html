@@ -38,7 +38,7 @@
                         <div class="product-desc py-0">
                             <h3 class="title"><a [routerLink]="['single-product',product.idProduct]">{{ product.name }}</a></h3>
                             <div class="d-flex align-items-center justify-content-between">
-                                <h6 class="product-price"><del class="del">{{ (product.price*1.1).toFixed(2) }}€</del>  {{ product.price}}€</h6>
+                                <h6 class="product-price"><del class="del">{{ (product.price*1.1).toFixed(2) }}€</del>  {{ product.price}}€ le kilo</h6>
                                 <button (click)="addToCart(product)" class="pro-btn" data-toggle="modal" [attr.data-target]="'#add-to-cart-'+product.idProduct"><i class="icon-basket"></i></button>
                             </div>
                         </div>
