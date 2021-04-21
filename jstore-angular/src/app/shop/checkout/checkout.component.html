@@ -24,7 +24,7 @@
                 <ul class="list-group cart-summary rounded-0">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         <ul class="items">
-                            <li *ngFor="let data of cart">{{ data.product.name}} x {{ data.number}} - PU: {{ data.product.price }} </li>
+                            <li *ngFor="let data of cart">{{ data.product.name}} x {{ data.number}} - Prix/Unité : {{ data.product.price }} </li>
                             <li>Frais de port</li>
                             <hr>
                             <li>{{ cartData.len }} produits</li>
@@ -55,7 +55,7 @@
                             <img src="assets/img/icon/11.png" alt="icon"> Livraison assurée !
                         </li>
                         <li class="mb-0">
-                            <img src="assets/img/icon/12.png" alt="icon"> Retour en cas problème !
+                            <img src="assets/img/icon/12.png" alt="icon"> Retour en cas de problème !
                         </li>
                     </ul>
                 </div>
